@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRise 재단 | 지속가능한 내일을 들어 올리다</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #2e8b57;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2e8b57;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .intro {
+      background: linear-gradient(to bottom right, #b7f0c0, #d3f8e2);
+    }
+
+    .activities {
+      background: linear-gradient(to bottom right, #f1fff1, #d4f1d8);
+    }
+
+    .campaign {
+      background: linear-gradient(to bottom right, #eaf8ff, #c3e9ff);
+    }
+
+    .news {
+      background: linear-gradient(to bottom right, #fff6ea, #ffe9c9);
+    }
+
+    .contact {
+      background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: #2e8b57;
+    }
+
+    p {
+      max-width: 700px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      background: #2e8b57;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #256e46;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">♻️ EcoRise 재단</div>
+      <ul>
+        <li><a href="#intro">소개</a></li>
+        <li><a href="#activities">핵심활동</a></li>
+        <li><a href="#campaign">캠페인참여</a></li>
+        <li><a href="#news">뉴스 / 스토리</a></li>
+        <li><a href="#contact">후원 / 문의</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro" class="intro">
+    <h1>EcoRise 재단</h1>
+    <p>청소년의 힘으로 일상 속 친환경 문화를 확산시키는 비영리 재단입니다.<br>
+       우리의 작은 실천이 지구의 내일을 들어 올립니다.</p>
+  </section>
+
+  <section id="activities" class="activities">
+    <h2>🌱 핵심활동</h2>
+    <p>EcoRise는 지역 학교와 커뮤니티를 중심으로<br>
+       <strong>플라스틱 줄이기 캠페인, 재활용 문화 확산, 환경교육 워크숍</strong> 등을 주도합니다.<br>
+       함께하는 실천으로 지속가능한 변화를 만들어갑니다.</p>
+  </section>
+
+  <section id="campaign" class="campaign">
+    <h2>🤝 캠페인 참여</h2>
+    <p>당신의 일상 속 작은 변화가 세상을 바꿉니다.<br>
+       지금 EcoRise 캠페인에 참여해보세요!</p>
+    <button onclick="alert('참여해주셔서 감사합니다! 🌿')">참여하기</button>
+  </section>
+
+  <section id="news" class="news">
+    <h2>📰 뉴스 / 스토리</h2>
+    <p>• [2025.11.04] ‘에코데이 챌린지’ 참가 학교 30곳 돌파!<br>
+       • [2025.10.12] 플라스틱 제로 캠페인, SNS 5만뷰 달성<br>
+       • [2025.09.20] 청소년 환경리더 워크숍 개최</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>💌 후원 / 문의</h2>
+    <p>EcoRise의 활동을 응원해주세요!<br>
+       문의 및 후원: ecorise.foundation@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2025 EcoRise 재단 | 본 홈페이지의 지적 소유권은 충렬여고 1학년 1반에게 있습니다.
+  </footer>
+
+  <script>
+    // 섹션이 스크롤될 때 자연스럽게 나타나게 하는 기능
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
